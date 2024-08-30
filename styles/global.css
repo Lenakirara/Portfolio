@@ -1,0 +1,117 @@
+/* Usando google fontes: Krona e Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+/* Definindo variáveis globais para serem reutilizadas*/
+:root {
+  --cor-primaria: #2c2828;
+  --cor-secundaria: #ffffe2;
+  --cor-terciaria: #9336B4;
+  --cor-hover: #c87ae4;
+
+  --font-krona: 'Krona One', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-size-title: 36px;
+}
+
+/* Reset básico para que os elementos comecem  com as mesmas configurações */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definindo o css do body em todos os menus */
+.body {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  display: flex;
+  min-height: 100vh; /* ocupando toda altura da tela */
+  flex-direction: column; /* organizando os elementos */
+}
+
+/* Header e Navbar */
+header {
+  padding: 1% 0;
+}
+
+.menu__hamburger {
+  display: none; /* oculto como default */
+  background-color: var(--cor-primaria);
+  border: 5px;
+  cursor: pointer;
+}
+
+.img_menu {
+  width: 60%;
+  height: 60px;
+}
+
+main {
+  flex-grow: 1; /* ajustando o main para ocupar o espaço disponivel - necessário para o footer ficar no final */
+}
+
+nav.menu__container ul {
+  align-items: center;
+  display: flex;
+  width: 100%; /* garantindo que o menu ocupe o espaço de largura*/
+  justify-content: center;
+  gap: 80px; 
+}
+
+.menu__list__link {
+  list-style: none;
+}
+
+.menu__link {
+  color: var(--cor-terciaria);
+  font-family: var(--font-krona);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.menu__link:hover {
+  color: var(--cor-hover);
+}
+
+/* Footer */
+footer {
+  color: var(--cor-terciaria);
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 920px) {
+  .menu__container {
+    display: none;
+  }
+
+  /* exibir o menu em coluna */
+  nav.menu__container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+    gap: 20px;
+  }
+
+  .menu__hamburger {
+    display: block; /* exibindo o botão */
+    position: relative;
+  }
+
+  .menu__container.menu_open {
+    display: flex;
+    position: absolute; /* posicionando a caixa com os menus */
+    top: 70px;
+    left: 5px;
+    width: auto;
+    color: var(--cor-terciaria);
+    background-color: var(--cor-secundaria);
+    opacity : 0.5;
+    border-radius: 5px;
+    font-weight: bolder;
+  } 
+
+}

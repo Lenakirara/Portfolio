@@ -1,0 +1,72 @@
+.main__portfolio {
+  padding: 5% 10% 5%;
+}
+
+.portfolio__title {
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: var(--font-size-title);
+}
+
+.portfolio__cards {
+  display: flex;
+  flex-wrap: wrap; /* permite que elemento pule para linha de baixo caso não tenha espaço */
+  justify-content: space-between;
+  text-align: center;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 calc(33.333% - 20px); /* 3 cards por linha */
+  transition: transform 0.3s ease; /* Transição suave */
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #b595d3;
+  min-height: 350px; /* Definindo altura máxima dos cards */
+  color: #504d4d;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Aumentando o tamanho do card */
+}
+
+.card h3 {
+  font-family: var(--font-krona);
+  font-size: 24px;
+  padding-top: 10px;
+}
+
+.card p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  flex-grow: 1; /* Paragrafo ocupa espaço disponivel */
+}
+
+.card img {
+  width: 100%;
+  height: 300px; /* Ajusta a altura da imagem */
+  border-radius: 7px;
+  object-fit: cover; /* Ajusta imagem para evitar que fique distorcida */
+}
+
+.button-link {
+  align-self: center; /* Centraliza o botão horizontalmente */
+  margin-top: auto;
+  padding: 10px 20px;
+  background-color: var(--cor-terciaria);
+  color: var(--cor-secundaria);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: var(--font-krona);
+}
+
+.button-link:hover {
+  background-color: var(--cor-hover); /* Muda a cor do botão ao passar o mouse */
+}

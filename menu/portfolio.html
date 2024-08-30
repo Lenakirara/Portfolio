@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/portfolio.css">
+  <title>Document</title>
+</head>
+<body class="body">
+  <header>
+    <!-- Menu com links -->
+    <nav class="menu__container">
+      <ul>
+        <li class="menu__list__link"><a class="menu__link" href="../index.html">Sobre mim</a></li>
+        <li class="menu__list__link"><a class="menu__link" href="./education.html">Formação Educacional</a></li>
+        <li class="menu__list__link"><a class="menu__link" href="./portfolio.html">Portfólio</a></li>
+        <li class="menu__list__link"><a class="menu__link" href="./contact.html">Contato</a></li>
+      </ul>
+    </nav>
+    <button class="menu__hamburger" onclick="hamburgerMenu()">
+      <img class="img_menu" src="../images/menu_hambg.png" alt="">
+    </button>
+  </header>
+<!-- main - informação sobre portfólio -->
+ <!-- Colocando links com target para abrir em outra aba -->
+  <main class="main__portfolio">
+    <section class="portfolio__container">
+      <h2 class="portfolio__title">Portfólio</h2>
+      <div class="portfolio__cards">
+        <div class="card">
+          <img decoding="async" src="../images/modify_materials.png" alt="Imagem de exemplo">
+          <h3>Modify Materials</h3>
+          <p>Programa de modificação de materiais em massa em ABAP</p>
+          <a href="https://github.com/Lenakirara/Modify_Materials" class="button-link" target="_blank">Saiba mais</a>
+        </div>
+        <div class="card">
+          <img decoding="async" src="../images/alv.png" alt="Imagem de exemplo">
+          <h3>ALV Report</h3>
+          <p>Desenvolvimento de relatórios em ALV</p>
+          <a href="https://github.com/Lenakirara/ALV_Report" class="button-link" target="_blank">Saiba mais</a>
+        </div>
+        <div class="card">
+          <img decoding="async" src="../images/cadastro_cliente.png" alt="Imagem de exemplo">
+          <h3>Cadastro de CLiente</h3>
+          <p>Desenvolvimento de sistema de gerenciamento de clientes em ABAP</p>
+          <a href="https://github.com/Lenakirara/Cadastro_Cliente" class="button-link" target="_blank">Saiba mais</a>
+        </div>
+        <div class="card">
+          <img decoding="async" src="../images/search.png" alt="Imagem de exemplo">
+          <h3>T.I.N.G.</h3>
+          <p>Programa em Python que simula o algoritmo de indexação de documentos similar ao do Google.</p>
+          <a href="https://github.com/Lenakirara/T.I.N.G./" class="button-link" target="_blank">Saiba mais</a>
+        </div>
+        <div class="card">
+          <img decoding="async" src="../images/delivery.png" alt="Imagem de exemplo">
+          <h3>Delivery App</h3>
+          <p>App de delivery de cerveja usando Reactjs e NodeJs</p>
+          <a href="https://github.com/Lenakirara/Delivery-APP" class="button-link" target="_blank">Saiba mais</a>
+        </div>
+        <div class="card">
+          <img decoding="async" src="../images/recipes.png" alt="Imagem de exemplo">
+          <h3>Recipes App</h3>
+          <p>App de pesquisa de receitas, desenvolvido em React Hooks e Context API</p>
+          <a href="https://github.com/Lenakirara/Recipes-App" class="button-link" target="_blank">Saiba mais</a>
+        </div>
+      </div>             
+    </section>
+  </main>
+  <!-- Footer -->
+<footer>Desenvolvido por Ghislaine</footer>
+<script src="../script.js"></script>
+</body>
+</html>

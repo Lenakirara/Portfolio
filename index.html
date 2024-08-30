@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/about.css">
+  <title>Portfólio</title>
+</head>
+<!-- colocando classe .body para ser usado nos demais menus -->
+<body class="body">
+    <header>
+      <!-- Menu com links -->
+      <nav class="menu__container">
+        <ul>
+          <li class="menu__list__link"><a class="menu__link" href="./index.html">Sobre mim</a></li>
+          <li class="menu__list__link"><a class="menu__link" href="./menu/education.html">Formação Educacional</a></li>
+          <li class="menu__list__link"><a class="menu__link" href="./menu/portfolio.html">Portfólio</a></li>
+          <li class="menu__list__link"><a class="menu__link" href="./menu/contact.html">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="menu__hamburger" onclick="hamburgerMenu()">
+        <img class="img_menu" src="./images/menu_hambg.png" alt="imagem - menu hamburguer">
+      </button>
+    </header>
+    <!-- Main: foto(img). Usando section para as informações Sobre mim (h2 e p) -->
+<main class="main__about">
+  <img class="img__photo" src="./images/lena_portfolio-r.png" alt="imagem do rosto ">
+  <section class="about__container">
+    <h2 class="about__title">Sobre mim</h2>
+    <p>Olá! Me chamo <strong>Ghislaine Latorraca</strong> e sou uma profissional com 12 anos de experiẽncia na área administrativa e em transição para área de desenvolvimento de sistemas. Tenho experiência como analista de sistemas com Oracle Siebel CRM e SQL. Experiência em desenvolvimento web (JavaScript, Python, ReactJs, NodeJs, MySQL, MongoDB). Atualmente, focada em SAP ABAP, com habilidades em ALV, reports, forms, module pool, Batch Input, exits, BAdIs, enhancements e otimização de código.
+    </p>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>Desenvolvido por Ghislaine</footer>
+<script src="../script.js"></script>
+</body>
+</html>
